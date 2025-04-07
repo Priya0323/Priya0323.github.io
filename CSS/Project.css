@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(238, 207, 186); 
+}
+
+header {
+   
+    flex-direction: column; 
+    align-items: center; 
+    height: 60px;
+    padding: 10px;
+   background-color: rgb(232, 79, 24);
+    border-radius: 5px;
+}
+h1 {
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 150px;
+    color: white;
+    margin-top: -5px;
+}
+nav ul {
+   
+    justify-content: center; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+
+
+nav ul li { 
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;  
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+#Photography {
+    display: block;
+    margin-top: 20px; 
+    padding-top: 20px;
+    height: auto; 
+    background-color: rgb(231, 189, 169); 
+    margin-top: 30px; 
+    width: 100%; 
+}
+
+#Advertisement and PSA {
+    margin-top: 20px; 
+    padding-top: 20px;
+    height: auto; 
+    background-color: rgb(231, 189, 169); 
+    width: 100%; 
+    display: inline-block;
+}
+
+#Miscellaneous {
+    margin-top: 20px; 
+    padding-top: 20px;
+    height: auto; 
+    background-color: rgb(231, 189, 169);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+    background-color: rgb(241, 178, 133);
+    width: auto; 
+    align-items: center;
+    margin-left: 0; 
+    padding: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.gallery-item {
+    background-color: rgb(227, 166, 125); 
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery-item:hover {
+    transform: scale(1.55);
+}
+
+.gallery-item img {
+   width: 100%; 
+   height: auto; 
+   border-radius: 8px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        
+        font-size: 20px;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    nav ul li { 
+        margin: 0 20px;
+    }
+
+    .left-container, .right-container {
+        width: 100%; 
+        display: block; 
+    }
+
+    .Photo {
+        width: 100%; 
+        height: auto; 
+    }
+}

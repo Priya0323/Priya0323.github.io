@@ -1,0 +1,170 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(232, 79, 24);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #fff; 
+    margin-top: -5px;   
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+
+nav ul li { 
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;  
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 50px;
+    color: #f0bf7e;
+    border: 3px saddlebrown;
+    border-radius: 2px;
+   
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin: 10px 0; 
+
+    width: 20px;
+    max-width: 100%; 
+    text-align: center;
+    height: 20px;
+}
+
+.contact button {
+    background: #ec8042;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(238, 207, 186);
+}
+
+.icon {
+    width: auto; 
+    height: auto; 
+    margin: 0 10px; 
+    margin: 10px; 
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    transition: all .3s ease-out;
+}
+
+.icon:hover {
+    width: 200px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center; 
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* Media query */
+@media screen and (max-width: 768px){ 
+    header {
+        width: 440px; 
+        border-radius: 2px;
+        display: flex;
+        margin: 0; 
+    }
+    h1 {
+        position: absolute;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 120px;
+    }
+
+    nav ul {
+        display: flex;
+        
+        font-size: 15px;
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 18px;
+    }
+
+    nav ul li { 
+        margin: 0 2px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1px;
+        margin-left: 10px;
+    }
+
+    .contact input, .contact textarea {
+        width:20px;
+        height: 20px;
+        align-items: center;
+    }
+
+    .icon {
+        width: 100%; 
+        height: auto; 
+        border-radius: 100px;    
+    }
+
+    footer {
+        justify-content: center;
+        width: 100%;
+    }
+
+}

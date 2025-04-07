@@ -1,0 +1,161 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 207, 186); 
+}
+header {
+    height: 70px; 
+    text-align: center;
+    background-color: rgb(232, 79, 24); 
+    border-radius: 5px;
+    width: 600px;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+}
+.logo{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-left: auto; 
+    margin-top: 10px; 
+    list-style-type: none;
+    position: relative; 
+}
+
+nav ul li { 
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;   
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+.about {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 50px;
+    margin-top: 100px;
+    border: 2px solid transparent; 
+    transition: border-color 0.5s ease; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about {
+        padding: 20px; 
+        margin-top: 50px; 
+    }
+
+    h2 {
+        font-size: 25px;
+        margin-left: -325px; 
+    }
+
+    p {
+        font-size: 12px;
+        width: 50px; 
+    }
+    table {
+        width: 100%; 
+}
+
+
+.about img {
+    width: 170px; 
+    height: 170px;
+    border-radius: 50%;
+    margin-left: -140px;
+    box-shadow: 0 0 25px 10px rgba(227, 132, 98, 1);
+    margin-top: -20px;
+}
+
+.right-container {
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0;
+    margin-top: -190px; 
+    margin-left: 50px;
+}
+p {
+    width: 380px; 
+    text-align: right; 
+    font-size: 20px;  
+    margin-top: 5px;  
+    
+}
+
+table {
+    margin-top: 30px;
+    background-color: rgb(227, 166, 125); 
+    width: 100%; 
+    max-width: 300px; 
+    height: 150px;
+    margin-left: -120px;
+
+}
+
+table td {
+    padding: 5px;
+    border: 1px;
+    background-color: rgb(235, 140, 96);
+    font-size: 25px;    
+}
+
+table th {
+    padding: 5px;
+    border: 1px;
+    background-color: rgb(232, 79, 24);
+    color: white;
+    font-size: 25px;
+}
+
+table td:hover {
+    color: #fff;
+}
+
+h2 {
+    font-size: 25px; 
+    text-align: center; 
+}
+
+.button1 {
+    display: inline-block; 
+    background-color: #e57a37;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px auto; 
+    width: auto;
+    margin-left: 90px;
+   
+    
+}
+}
